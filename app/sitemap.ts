@@ -1,0 +1,1 @@
+import {books} from '@/lib/content';export default function sitemap(){const base=process.env.NEXT_PUBLIC_SITE_URL||'https://paolonarciso.com';return ['', '/books','/writing','/explorations','/social-impact','/about',...books.map(b=>'/books/'+b.slug)].map(path=>({url:base+path}))}

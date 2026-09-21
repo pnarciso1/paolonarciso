@@ -1,0 +1,3 @@
+import {PageIntro,TextLink} from '@/components/ui';import Writing from '@/components/writing';import {site} from '@/lib/content';
+export const metadata={title:'Writing',alternates:{canonical:'/writing'}};export const revalidate=3600;
+export default function Page(){return <><PageIntro eyebrow="Essays & reflections" title="A place to think out loud.">My writing lives on Substack. Read recent pieces here, then join the conversation there.</PageIntro><Writing limit={12}/><div className="section-end"><TextLink href={site.substack+'/archive'}>Visit the full archive</TextLink><TextLink href={site.substack+'/subscribe'}>Subscribe on Substack</TextLink></div></>}
