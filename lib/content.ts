@@ -6,6 +6,7 @@ export const site = {
   amazon: 'https://www.amazon.com/stores/author/B0CYTGCNFY/allbooks',
   youtube: 'https://www.youtube.com/@MiniPhilippineHistoryLessons',
   atlas: 'https://humanorigins.paolonarciso.com',
+  archipelago: 'https://archipelago.paolonarciso.com',
 };
 
 export type Book = {
@@ -125,8 +126,17 @@ export const visualizations = [
     eyebrow: 'Interactive exploration',
     description: 'Follow the human journey out of Africa. Paths, evidence, and an open question about how we became us.',
     image: '/images/HumanOriginsAtlas.jpg',
-    url: 'https://humanorigins.paolonarciso.com',
+    url: site.atlas,
     cta: 'Explore the atlas',
+  },
+  {
+    title: 'Before the Philippines',
+    eyebrow: 'Interactive exploration',
+    description: 'I created this visualization to address misconceptions about where the peoples of the Philippines came from, making current theories and evidence accessible through an interactive exploration of their diverse origins. It also clarifies that “Filipino” emerged during Spanish colonial rule and later became a shared national identity, while the islands’ peoples had distinct names, communities, and histories long before colonization.',
+    image: '/images/Archipelago.jpg',
+    imagePosition: '62% 48%',
+    url: site.archipelago,
+    cta: 'Explore the archipelago',
   },
 ];
 

@@ -6,8 +6,8 @@ export default function Page(){
     <PageIntro eyebrow="Data, history & curiosity" title="Other ways of seeing.">A growing set of visual essays, plus short films on Philippine history.</PageIntro>
     <section>
       <span className="eyebrow">Visual essays</span>
-      <h2>Follow the human journey.</h2>
-      <p className="lead">Interactive pieces you can explore. The Human Origins Atlas is the first.</p>
+      <h2>Follow the evidence.</h2>
+      <p className="lead">Interactive pieces on human origins and the peopling of the Philippines.</p>
       <div className="viz-list">
         {visualizations.map((_,i)=><VisualizationCard key={visualizations[i].title} index={i}/>)}
       </div>

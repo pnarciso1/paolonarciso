@@ -29,7 +29,7 @@ export function AlligatorSpread() {
 export function VisualizationCard({index=0,overlay=false}:{index?:number;overlay?:boolean}) {
   const v=visualizations[index];
   return <article className={overlay?'viz-card viz-card-overlay':'viz-card'}>
-    <a className="viz-still" href={v.url}><img src={v.image} alt={v.title}/></a>
+    <a className="viz-still" href={v.url}><img src={v.image} alt={v.title} style={v.imagePosition?{objectPosition:v.imagePosition}:undefined}/></a>
     <div className="viz-body">
       <span className="eyebrow">{v.eyebrow}</span>
       <h3>{v.title}</h3>

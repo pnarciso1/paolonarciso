@@ -74,6 +74,9 @@ export default function Home(){return <>
       <TextLink href={site.youtube}>Watch on YouTube</TextLink>
     </article>
   </div>
+  <div className="section-end">
+    <TextLink href="/explorations">More visual essays</TextLink>
+  </div>
 </section>
 <section className="contact" id="contact">
   <span className="eyebrow">Stay in touch</span>
